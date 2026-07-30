@@ -27,7 +27,7 @@ scanBtn.onclick = async () => {
     formData.append("savings_split", 20);
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/audit", {
+        const response = await fetch("/audit", {
             method: "POST",
             body: formData
         });
